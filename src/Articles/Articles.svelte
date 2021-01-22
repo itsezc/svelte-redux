@@ -11,8 +11,8 @@
 	});
 </script>
 
-<input bind:value={articleTitle} />
-<button on:click={() => addArticle(articleTitle)}>Create Article</button>
+<input bind:value={articleTitle} id='add_input' />
+<button id='submit_input' on:click={() => addArticle(articleTitle)}>Create Article</button>
 {#if articles.length}
 	<ul>
 		{#each articles as article}
